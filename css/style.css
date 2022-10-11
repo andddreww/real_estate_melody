@@ -71,7 +71,8 @@ body {
 .main {
     max-width: 1280px;
     margin: auto;
-    padding-top: 54px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
 }
 
@@ -179,6 +180,15 @@ path.current-floor {
     padding: 50px;
 }
 
+.flats path {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.flats path:hover {
+    opacity: 1;
+}
+
 .modal-title {
     font-family: "Bebas Neue Cyrillic", sans-serif;
     font-weight: normal;
@@ -231,4 +241,79 @@ path.current-floor {
     background-color: #fff;
     margin-right: 27;
     margin-top: 38;
+}
+
+.footer {
+    background-color: #d7d7d7;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 4px solid #3596F5;
+}
+
+.footer-info {
+    max-width: 1280px;
+    justify-content: space-between; /* расставили элементы по краям */
+    margin: auto;
+    display: flex; /* сделали блок гибкий */
+    
+    
+}
+
+.footerbar {
+    max-width: 500px;
+    justify-content: space-between; /* расставили элементы по краям */
+    display: flex; /* сделали блок гибкий */
+    align-items: center;
+}
+
+.footerbar-contacts {
+    text-align: left;
+    margin: 0 40px;
+}
+
+.footerbar-text {
+    display: block;
+    color: #635854;
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.footerbar-phone {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #635854;
+}
+
+.logo-social {
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+.footerbar-links {
+    display: flex;
+    justify-content: center; /* расставили элементы по центру */
+    align-items: center;
+    margin: 0; /* отключили внешние отступы */
+    padding: 0; /* отключили внутренние отступы */
+    list-style: none; /* отключили точки листа */
+}
+
+.footerbar-menu {
+    list-style: none; /* отключили точки листа */
+    list-style: none; /* отключили точки листа */
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footerbar-item {
+    margin-left: 20px;
+}
+
+.footerbar-link {
+    color: #635854;
+    
 }
